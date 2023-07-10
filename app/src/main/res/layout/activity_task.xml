@@ -1,0 +1,80 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task Assignment"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/etTaskDescription"
+        android:layout_width="325dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="339dp"
+        android:hint="Enter Task Description"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spnDepartments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rgTaskStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbHighestPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High priority"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/rbMediumPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mid priority"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@android:color/black" />
+
+    </RadioGroup>
+
+    <!-- Add a button to submit the task assignment -->
+    <Button
+        android:id="@+id/btnTask"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Assign"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_gravity="end"
+        android:background="@color/button"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deapartments"
+        android:textSize="24sp"
+        android:layout_marginBottom="40dp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:gravity="center" />
+    <!-- EditText for entering department name -->
+    <EditText
+        android:id="@+id/editTextDepartmentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Department Name" />
+
+    <!-- Button to create the department -->
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:background="@color/button"
+
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

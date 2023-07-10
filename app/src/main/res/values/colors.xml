@@ -5,6 +5,17 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-</resources>
+    <color name="lightBlue">#80CAF8</color> <!-- Light Blue -->
+    <color name="darkBlue">#2962FF</color> <!-- Dark Blue -->
+    <color name="red">#FF3D00</color> <!-- Red -->
+    <color name="green">#00C853</color> <!-- Green -->
+    <color name="yellow">#FFD600</color> <!-- Yellow -->
+    <color name="orange">#FF6D00</color> <!-- Orange -->
+    <color name="purple">#AA00FF</color> <!-- Purple -->
+    <color name="pink">#FF4081</color> <!-- Pink -->
+    <color name="gray">#9E9E9E</color> <!-- Gray -->
+    <color name="black">#000000</color> <!-- Black -->
+    <color name="white">#FFFFFF</color>
+    <color name="button">#50C2C9</color> <!-- Button color -->
+    <color name="pages">#F5F5F5</color>
+   </resources>

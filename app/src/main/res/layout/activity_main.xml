@@ -1,7 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2" />
+    android:background="@color/pages">
+
+    <!-- Circular Blue Circle -->
+
+    <!-- Centered section: Image and Welcome Text -->
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circle" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!-- Top section: Image -->
+        <ImageView
+            android:layout_width="178dp"
+            android:layout_height="239dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/image1"
+            android:contentDescription="Welcome Image" />
+
+        <!-- Middle section: Title "Welcome" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:paddingTop="20dp"
+            android:paddingBottom="30dp"
+            android:text="Welcome to our Business Management App!"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- New TextView below the Welcome Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Empower your business with smart and efficient management tools. Streamline tasks, boost productivity, and make informed decisions with ease. Let's embark on this journey of success together!"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!-- Bottom section: Buttons for login and signup -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login"
+            android:id="@+id/loginButton"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:background="@color/button"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Signup"
+            android:background="@color/button"
+            android:id="@+id/signupButton"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

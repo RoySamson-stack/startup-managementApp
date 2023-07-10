@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task Management"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnAssignTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign Tasks"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:gravity="center" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Task"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Department"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+        </TableRow>
+
+        <!-- Add more TableRow elements with task and department data here -->
+
+    </TableLayout>
+
+</LinearLayout>
